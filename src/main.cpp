@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 int main()
 {
@@ -9,6 +10,8 @@ int main()
 	std::cout << "He was " << age << " years old" << std::endl;
 	std::cout << "He liked the name " << characterName << std::endl;
 	std::cout << "He did not like being " << age << std::endl;
+
+	// working with strings
 	// len
 	std::cout << characterName.length() << std::endl;
 	//char_at
@@ -17,6 +20,20 @@ int main()
 	std::cout << characterName.find("h", 0) << std::endl;
 	// substr
 	std::cout << characterName.substr(1, 2) << std::endl;
+
+	// working with numbers
+	// ints
+	std::cout << 5 + 7 << std::endl;
+	std::cout << 5 * 7 << std::endl;
+	std::cout << 5 / 7 << std::endl;
+	std::cout << 5 - 7 << std::endl;
+	std::cout << pow(5, 7) << std::endl;
+	// doubles
+	std::cout << 5.02 + 7.92 << std::endl;
+	// extra operatiosn
+	int wnum = 80;
+	wnum /= 5;
+	std::cout << wnum << std::endl;
 
 	return 0;
 }
