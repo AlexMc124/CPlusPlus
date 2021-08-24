@@ -5,11 +5,11 @@
 int main()
 {
 	std::string characterName = "John";
-	int age = 70;
+	int characterAge = 70;
 	std::cout << "There once was a man named " << characterName << std::endl;
-	std::cout << "He was " << age << " years old" << std::endl;
+	std::cout << "He was " << characterAge << " years old" << std::endl;
 	std::cout << "He liked the name " << characterName << std::endl;
-	std::cout << "He did not like being " << age << std::endl;
+	std::cout << "He did not like being " << characterAge << std::endl;
 
 	// working with strings
 	// len
@@ -34,6 +34,15 @@ int main()
 	int wnum = 80;
 	wnum /= 5;
 	std::cout << wnum << std::endl;
+
+	// getting User Input
+	int userAge;
+	std::string userName;
+	std::cout << "Enter your age : " << std::endl;
+	std::cin >> userAge;
+	std::cout << "Enter your name : " << std::endl;
+	std::getline(std::cin, userName);
+	std::cout << "Your name is " << userName << " and you are " << userAge << " years old" << std::endl;
 
 	return 0;
 }
